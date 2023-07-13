@@ -1,38 +1,93 @@
 .App {
+  background-color: grey;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container{
+  background: #000;
+  border-radius: 10%;
+  box-shadow: 0 1px 4px 0 rgba(0 0 0 .5);
+  color: #ede7fe;
+  padding: 10px;
+  margin-top: -150px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.Heading {
+  display: block;
+  font-size: 1.7em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.Input-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; 
+  width: 350px;
+}
+.Para{
+    font-family:fantasy;
+    font-size: 18px;
+    display: block;
+  
+}
+.Label{
+  font-size: 14px;
+}
+.Para2{
+  font-family: fantasy;
+  font-size: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin: 0;
+}
+.Input-wrapper input {
+  background-color: #ede7fe;
+  border: 0;
+  border-radius: 4px;
+  height: 20px;
+  margin: 10px;
+  padding: 6px;
+  width: 160px;
+}
+.Input-wrapper button {
+  border-radius: 50%;
+  height: 22px;
+  padding: 0;
+  width: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+.Task-List {
+  align-items: center;
+  background-color: #8a2be2;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+.Task-List button {
+  border-radius: 50%;
+  height: 22px;
+  outline: none;
+  width: 22px;
+}
+.button:disabled {
+  background-color: black;
+  color: grey;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
