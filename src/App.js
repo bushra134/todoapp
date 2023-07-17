@@ -6,7 +6,7 @@ import Filterr from './Filterr';
 function App() {
   const [currentItem, setCurrentItem] =useState(null);
   const [itemList, updateItemList] = useState([]);
-  const [status,setStatus] = useState('');
+  const [status,setStatus] = useState('Pending');
   const [filter,setFilter] = useState({
     pending: true,
     inProgress: true,
